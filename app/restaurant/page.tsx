@@ -157,6 +157,130 @@ export default function RestaurantPage() {
         </div>
       </section>
 
+      {/* Dessert Showcase Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-4">Our Signature Desserts</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+              Indulge in our exquisite collection of handcrafted desserts, prepared by our talented pastry chefs
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {/* Chocolate Cake */}
+            <div className="relative h-64 rounded-lg overflow-hidden group">
+              <Image
+                src="/desert/1.jpg"
+                alt="Chocolate Cake"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-semibold">Chocolate Cake</h3>
+              </div>
+            </div>
+
+            {/* Donut */}
+            <div className="relative h-64 rounded-lg overflow-hidden group">
+              <Image
+                src="/desert/donut.jpg"
+                alt="Chocolate Donut"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-semibold">Chocolate Donut</h3>
+              </div>
+            </div>
+
+            {/* Eclair */}
+            <div className="relative h-64 rounded-lg overflow-hidden group">
+              <Image
+                src="/desert/2.jpg"
+                alt="Eclair"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-semibold">Eclair</h3>
+              </div>
+            </div>
+
+            {/* Chocolate Tart */}
+            <div className="relative h-64 rounded-lg overflow-hidden group">
+              <Image
+                src="/desert/3.jpg"
+                alt="Chocolate Tart"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-semibold">Chocolate Tart</h3>
+              </div>
+            </div>
+
+            {/* Birthday Cake */}
+            <div className="relative h-64 rounded-lg overflow-hidden group">
+              <Image
+                src="/desert/birthday-cake.jpg"
+                alt="Birthday Cake"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-semibold">Birthday Cake</h3>
+              </div>
+            </div>
+
+            {/* Chocolate Log */}
+            <div className="relative h-64 rounded-lg overflow-hidden group">
+              <Image
+                src="/desert/4.jpg"
+                alt="Chocolate Log Cake"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-semibold">Chocolate Log</h3>
+              </div>
+            </div>
+
+            {/* Swiss Roll */}
+            <div className="relative h-64 rounded-lg overflow-hidden group">
+              <Image
+               src="/Desert/torta-1.jpg"
+                alt="Swiss Roll"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-semibold">Swiss Roll</h3>
+              </div>
+            </div>
+
+            {/* Brownie Tray */}
+            <div className="relative h-64 rounded-lg overflow-hidden group">
+              <Image
+                 src="/desert/torta-2.jpg"
+                alt="Brownie Tray"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <h3 className="text-white text-lg font-semibold">Brownie Tray</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button className="bg-primary hover:bg-secondary text-primary-foreground">
+              View Full Dessert Menu
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   )
