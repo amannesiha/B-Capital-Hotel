@@ -89,7 +89,7 @@ export default function HomePage() {
               <CardContent className="p-6 text-center">
                 <div className="relative h-32 w-full mx-auto mb-4 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/airport-shuttle.jpg"
+                    src="/images/airport-shuttle.png"
                     alt="Complimentary Airport Shuttle Service"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
