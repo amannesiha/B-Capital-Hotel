@@ -51,7 +51,7 @@ export default function HomePage() {
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Islamic Prayer Room</h3>
-                <p className="text-muted-foreground">Quite Islamic Prayer Room for every traveler</p>
+                <p className="text-muted-foreground">Quiet Islamic Prayer Room for every traveler</p>
               </CardContent>
             </Card>
 

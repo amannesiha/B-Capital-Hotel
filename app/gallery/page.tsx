@@ -17,6 +17,11 @@ const galleryImages = [
     alt: "Executive Suite",
     category: "Rooms",
   },
+  {
+    src: "/images/hotel-room-3.jpg",
+    alt: "Deluxe Room",
+    category: "Rooms",
+  },
   // Restaurant
   {
     src: "/images/restaurant-1.jpg",
@@ -39,6 +44,16 @@ const galleryImages = [
     alt: "Event Hall",
     category: "Meeting Hall",
   },
+  {
+    src: "/images/meeting-hall.jpg",
+    alt: "Meeting Hall",
+    category: "Meeting Hall",
+  },
+  {
+    src: "/images/meeting-hall-2.jpg",
+    alt: "Meeting Hall",
+    category: "Meeting Hall",
+  },
   // Swimming Pool
   {
     src: "/luxury-hotel-swimming-pool-area.jpg",
@@ -52,18 +67,18 @@ const galleryImages = [
   },
   // Outdoor
   {
-    src: "/images/hotel-exterior.jpg",
+    src: "/images/hotel-exterior-3.jpg",
     alt: "Hotel Exterior",
     category: "Outdoor",
   },
   {
-    src: "/images/hotel-exterior-2.jpg",
-    alt: "Hotel Front View",
+    src: "/images/hotel-exterior-4.jpg",
+    alt: "Hotel Exterior",
     category: "Outdoor",
   },
   {
-    src: "/hotel-garden-and-outdoor-seating-area.jpg",
-    alt: "Garden Area",
+    src: "/images/hotel-exterior-5.jpg",
+    alt: "Hotel Front View",
     category: "Outdoor",
   },
 ]

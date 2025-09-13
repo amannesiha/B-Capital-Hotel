@@ -15,7 +15,7 @@ const slides = [
   {
     image: "/images/Prying room.jpg",
     title: "Islamic Prayer Room ",
-    subtitle: "Quite Islamic Prayer Room for every traveler",
+    subtitle: "Quiet Islamic Prayer Room for every traveler",
     animation: "zoom-out-pan-left",
   },
   {
@@ -27,6 +27,12 @@ const slides = [
   {
     image: "/images/event-hall.jpg",
     title: "Perfect Venue for Events",
+    subtitle: "Host your special occasions in our sophisticated event spaces",
+    animation: "pan-up-zoom-in",
+  },
+  {
+    image: "/images/meeting-hall.jpg",
+    title: "Perfect Venue for meetings",
     subtitle: "Host your special occasions in our sophisticated event spaces",
     animation: "pan-up-zoom-in",
   },

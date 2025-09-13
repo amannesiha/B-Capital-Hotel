@@ -60,7 +60,9 @@ export function Navigation({ overlay = false }: NavigationProps) {
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-primary hover:bg-secondary text-primary-foreground">Book Now</Button>
+            <Link href="/room">
+              <Button className="bg-primary hover:bg-secondary text-primary-foreground">Book Now</Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -97,7 +99,9 @@ export function Navigation({ overlay = false }: NavigationProps) {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full bg-primary hover:bg-secondary text-primary-foreground">Book Now</Button>
+                <Link href="/room" onClick={() => setIsOpen(false)}>
+                  <Button className="w-full bg-primary hover:bg-secondary text-primary-foreground">Book Now</Button>
+                </Link>
               </div>
             </div>
           </div>

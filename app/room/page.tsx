@@ -152,7 +152,7 @@ export default function RoomPage() {
               size="lg"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary"
             >
-              Call Us: +1 (555) 123-4567
+              Call Us: 251911123456
             </Button>
           </div>
         </div>
