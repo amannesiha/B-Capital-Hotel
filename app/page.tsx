@@ -1,6 +1,5 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { VideoSection } from "@/components/video-section"
 import { HeroSlideshow } from "@/components/hero-slideshow"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -14,9 +13,6 @@ export default function HomePage() {
       <Navigation />
 
       <HeroSlideshow />
-
-      {/* Video Section */}
-      <VideoSection />
 
       {/* Features Section */}
       <section className="py-16 px-4">
@@ -48,13 +44,13 @@ export default function HomePage() {
               <CardContent className="p-6 text-center">
                 <div className="relative h-32 w-full mx-auto mb-4 rounded-lg overflow-hidden">
                   <Image
-                    src="/hotel-parking-garage-with-luxury-cars.jpg"
-                    alt="Free Parking Service"
+                    src="/images/Prying room.jpg"
+                    alt="Muslim Prayer Room"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Free Parking</h3>
+                <h3 className="text-xl font-semibold mb-2">Muslim Prayer Room</h3>
                 <p className="text-muted-foreground">Complimentary parking for all our guests</p>
               </CardContent>
             </Card>

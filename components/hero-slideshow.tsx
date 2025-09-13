@@ -7,15 +7,15 @@ import Link from "next/link"
 
 const slides = [
   {
-    image: "/images/hotel-exterior.jpg",
+    image: "/images/hotel-room-1.jpg",
     title: "Welcome to B Capital Hotel",
     subtitle: "Experience luxury, comfort, and exceptional service in the heart of the city",
     animation: "zoom-in-pan-right",
   },
   {
-    image: "/images/hotel-exterior-2.jpg",
+    image: "/images/Prying room.jpg",
     title: "Your Perfect Stay Awaits",
-    subtitle: "Modern amenities and elegant accommodations for every traveler",
+    subtitle: "Quite Rooms and elegant accommodations for every traveler",
     animation: "zoom-out-pan-left",
   },
   {
