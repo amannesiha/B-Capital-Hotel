@@ -82,7 +82,7 @@ export default function GalleryPage() {
       {/* Hero Section */}
       <section className="relative py-16 px-4">
         <div className="absolute inset-0">
-          <Image src="/images/hotel-exterior-2.jpg" alt="Hotel Gallery Background" fill className="object-cover" />
+          <Image src="/images/hotel-room-1.jpg" alt="Hotel Gallery Background" fill className="object-cover" />
           <div className="absolute inset-0 bg-black/40" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto text-center">

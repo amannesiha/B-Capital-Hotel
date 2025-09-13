@@ -100,7 +100,7 @@ export default function MenuPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center">
+      <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image src="/images/food-platter.jpg" alt="Signature Dish" fill className="object-cover" />
           <div className="absolute inset-0 bg-black/50" />

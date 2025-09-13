@@ -50,8 +50,8 @@ export default function HomePage() {
                     className="object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Muslim Prayer Room</h3>
-                <p className="text-muted-foreground">Complimentary parking for all our guests</p>
+                <h3 className="text-xl font-semibold mb-2">Islamic Prayer Room</h3>
+                <p className="text-muted-foreground">Quite Islamic Prayer Room for every traveler</p>
               </CardContent>
             </Card>
 

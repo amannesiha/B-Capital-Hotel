@@ -50,7 +50,7 @@ export default function RoomPage() {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <Navigation />
-      <section className="relative h-96 flex items-center justify-center">
+      <section className="relative h-[70vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image src="/images/hotel-room-1.jpg" alt="Hotel Room Background" fill className="object-cover" />
           <div className="absolute inset-0 bg-black/50" />

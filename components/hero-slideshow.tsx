@@ -14,8 +14,8 @@ const slides = [
   },
   {
     image: "/images/Prying room.jpg",
-    title: "Your Perfect Stay Awaits",
-    subtitle: "Quite Rooms and elegant accommodations for every traveler",
+    title: "Islamic Prayer Room ",
+    subtitle: "Quite Islamic Prayer Room for every traveler",
     animation: "zoom-out-pan-left",
   },
   {
@@ -45,7 +45,7 @@ export function HeroSlideshow() {
 
   return (
     <section
-      className="relative h-screen w-full overflow-hidden will-change-auto"
+      className="relative h-[70vh] w-full overflow-hidden will-change-auto"
       style={{
         transformStyle: "flat",
         isolation: "isolate",
