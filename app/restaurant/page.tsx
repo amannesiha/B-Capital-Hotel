@@ -79,49 +79,7 @@ export default function RestaurantPage() {
         </div>
       </section>
 
-      {/* Features */}
-      <section className="py-16 bg-card">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">Restaurant Features</h2>
-            <p className="text-xl text-muted-foreground text-pretty">
-              Everything you need for an exceptional dining experience
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="bg-background border-border hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 text-center">
-                <Utensils className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Gourmet Cuisine</h3>
-                <p className="text-muted-foreground">
-                  Expertly crafted dishes using premium ingredients and innovative cooking techniques
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-background border-border hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 text-center">
-                <Wine className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Wine Selection</h3>
-                <p className="text-muted-foreground">
-                  Carefully curated wine list featuring both local and international selections
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-background border-border hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 text-center">
-                <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Private Dining</h3>
-                <p className="text-muted-foreground">
-                  Intimate dining spaces available for special occasions and business meetings
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+ 
 
       {/* Atmosphere Gallery */}
       <section className="py-16">
