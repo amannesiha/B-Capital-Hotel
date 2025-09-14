@@ -129,7 +129,7 @@ export default function RestaurantPage() {
             {/* Chocolate Cake */}
             <div className="relative h-64 rounded-lg overflow-hidden group">
               <Image
-                src="/desert/1.jpg"
+                src="/images/1.jpg"
                 alt="Chocolate Cake"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -142,7 +142,7 @@ export default function RestaurantPage() {
             {/* Donut */}
             <div className="relative h-64 rounded-lg overflow-hidden group">
               <Image
-                src="/desert/donut.jpg"
+                src="/images/donut.jpg"
                 alt="Chocolate Donut"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -155,7 +155,7 @@ export default function RestaurantPage() {
             {/* Eclair */}
             <div className="relative h-64 rounded-lg overflow-hidden group">
               <Image
-                src="/desert/2.jpg"
+                src="/images/2.jpg"
                 alt="Eclair"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -168,7 +168,7 @@ export default function RestaurantPage() {
             {/* Chocolate Tart */}
             <div className="relative h-64 rounded-lg overflow-hidden group">
               <Image
-                src="/desert/3.jpg"
+                src="/images/3.jpg"
                 alt="Chocolate Tart"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -181,7 +181,7 @@ export default function RestaurantPage() {
             {/* Birthday Cake */}
             <div className="relative h-64 rounded-lg overflow-hidden group">
               <Image
-                src="/desert/birthday-cake.jpg"
+                src="/images/birthday-cake.jpg"
                 alt="Birthday Cake"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -194,7 +194,7 @@ export default function RestaurantPage() {
             {/* Chocolate Log */}
             <div className="relative h-64 rounded-lg overflow-hidden group">
               <Image
-                src="/desert/4.jpg"
+                src="/images/4.jpg"
                 alt="Chocolate Log Cake"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -207,7 +207,7 @@ export default function RestaurantPage() {
             {/* Swiss Roll */}
             <div className="relative h-64 rounded-lg overflow-hidden group">
               <Image
-               src="/Desert/torta-1.jpg"
+               src="/images/torta-1.jpg"
                 alt="Swiss Roll"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -220,7 +220,7 @@ export default function RestaurantPage() {
             {/* Brownie Tray */}
             <div className="relative h-64 rounded-lg overflow-hidden group">
               <Image
-                 src="/desert/torta-2.jpg"
+                 src="/images/torta-2.jpg"
                 alt="Brownie Tray"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
