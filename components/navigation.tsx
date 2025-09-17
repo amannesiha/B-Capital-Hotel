@@ -73,9 +73,10 @@ export function Navigation({ overlay = false }: NavigationProps) {
               </button>
               <div className="absolute left-0 mt-2 w-56 rounded-md border border-border bg-card shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity">
                 <div className="py-2">
+                <Link href="/services/islamic" className="block px-4 py-2 text-foreground transition-colors hover:bg-primary hover:text-primary-foreground">Indoor Masjid</Link>
                   <Link href="/services/shuttle" className="block px-4 py-2 text-foreground transition-colors hover:bg-primary hover:text-primary-foreground">Shuttle Service</Link>
                   <Link href="/services/gym" className="block px-4 py-2 text-foreground transition-colors hover:bg-primary hover:text-primary-foreground">Gym</Link>
-                  <Link href="/services/islamic" className="block px-4 py-2 text-foreground transition-colors hover:bg-primary hover:text-primary-foreground">Islamic</Link>
+               
                 </div>
               </div>
             </div>
