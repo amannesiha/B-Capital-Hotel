@@ -138,7 +138,7 @@ export function Navigation({ overlay = false }: NavigationProps) {
                 className={`block px-3 py-2 transition-colors duration-200 ${overlay ? "text-white hover:text-primary-light" : "text-foreground hover:text-primary"}`}
                 onClick={() => setIsOpen(false)}
               >
-                Islamic
+                Indoor Masjid
               </Link>
               <div className="px-3 py-2">
                 <Link href="/room" onClick={() => setIsOpen(false)}>
