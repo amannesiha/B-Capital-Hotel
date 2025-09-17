@@ -3,7 +3,9 @@ import { Footer } from "@/components/footer"
 import { HeroSlideshow } from "@/components/hero-slideshow"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Star, Utensils, Calendar } from "lucide-react"
+import { Input } from "@/components/ui/input"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Star, Utensils, Calendar, Bed, Wifi, Car, Coffee, Users, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -13,6 +15,202 @@ export default function HomePage() {
       <Navigation />
 
       <HeroSlideshow />
+
+      {/* Reservation Section */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">Book Your Stay</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
+              Choose from our selection of luxurious rooms and suites
+            </p>
+          </div>
+
+          {/* Booking Form */}
+          <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div>
+                <label htmlFor="checkin" className="block text-sm font-medium text-foreground mb-2">Check-in</label>
+                <Input type="date" id="checkin" className="bg-input border-border" />
+              </div>
+              <div>
+                <label htmlFor="checkout" className="block text-sm font-medium text-foreground mb-2">Check-out</label>
+                <Input type="date" id="checkout" className="bg-input border-border" />
+              </div>
+              <div>
+                <label htmlFor="guests" className="block text-sm font-medium text-foreground mb-2">Guests</label>
+                <Select>
+                  <SelectTrigger className="mt-1">
+                    <SelectValue placeholder="Select guests" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="1">1 Guest</SelectItem>
+                    <SelectItem value="2">2 Guests</SelectItem>
+                    <SelectItem value="3">3 Guests</SelectItem>
+                    <SelectItem value="4">4 Guests</SelectItem>
+                    <SelectItem value="5+">5+ Guests</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="flex items-end">
+                <Button className="w-full bg-primary hover:bg-secondary text-primary-foreground">
+                  Search Rooms
+                </Button>
+              </div>
+            </div>
+          </div>
+
+          {/* Room List */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            {/* Deluxe Room */}
+            <Card className="bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative h-64">
+                <Image
+                  src="/images/hotel-room-1.jpg"
+                  alt="Deluxe Room"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                  $120/night
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-2">Deluxe Room</h3>
+                <p className="text-muted-foreground mb-4">
+                  Spacious room with modern amenities, perfect for business and leisure travelers.
+                </p>
+                <div className="space-y-2 mb-6">
+                  <div className="flex items-center space-x-2">
+                    <Bed className="h-4 w-4 text-primary" />
+                    <span className="text-sm">King Size Bed</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Wifi className="h-4 w-4 text-primary" />
+                    <span className="text-sm">Free Wi-Fi</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Coffee className="h-4 w-4 text-primary" />
+                    <span className="text-sm">Coffee Machine</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Users className="h-4 w-4 text-primary" />
+                    <span className="text-sm">Up to 2 Guests</span>
+                  </div>
+                </div>
+                <Button className="w-full bg-primary hover:bg-secondary text-primary-foreground">
+                  Book Now
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Executive Suite */}
+            <Card className="bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative h-64">
+                <Image
+                  src="/images/hotel-room-2.jpg"
+                  alt="Executive Suite"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                  $200/night
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-2">Executive Suite</h3>
+                <p className="text-muted-foreground mb-4">
+                  Premium suite with separate living area, ideal for extended stays and business meetings.
+                </p>
+                <div className="space-y-2 mb-6">
+                  <div className="flex items-center space-x-2">
+                    <Bed className="h-4 w-4 text-primary" />
+                    <span className="text-sm">King Size Bed</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Wifi className="h-4 w-4 text-primary" />
+                    <span className="text-sm">Free Wi-Fi</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Coffee className="h-4 w-4 text-primary" />
+                    <span className="text-sm">Mini Bar</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Users className="h-4 w-4 text-primary" />
+                    <span className="text-sm">Up to 4 Guests</span>
+                  </div>
+                </div>
+                <Button className="w-full bg-primary hover:bg-secondary text-primary-foreground">
+                  Book Now
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Presidential Suite */}
+            <Card className="bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative h-64">
+                <Image
+                  src="/images/hotel-room-1.jpg"
+                  alt="Presidential Suite"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                  $350/night
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-bold mb-2">Presidential Suite</h3>
+                <p className="text-muted-foreground mb-4">
+                  Luxurious suite with panoramic views, perfect for special occasions and VIP guests.
+                </p>
+                <div className="space-y-2 mb-6">
+                  <div className="flex items-center space-x-2">
+                    <Bed className="h-4 w-4 text-primary" />
+                    <span className="text-sm">King Size Bed</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Wifi className="h-4 w-4 text-primary" />
+                    <span className="text-sm">Free Wi-Fi</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Coffee className="h-4 w-4 text-primary" />
+                    <span className="text-sm">Full Kitchen</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Users className="h-4 w-4 text-primary" />
+                    <span className="text-sm">Up to 6 Guests</span>
+                  </div>
+                </div>
+                <Button className="w-full bg-primary hover:bg-secondary text-primary-foreground">
+                  Book Now
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Special Offers */}
+          <div className="mt-12 bg-primary/10 dark:bg-primary/20 rounded-xl p-8">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-foreground mb-4">Special Offers</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-primary" />
+                  <span className="text-foreground">Free Airport Shuttle</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-primary" />
+                  <span className="text-foreground">Complimentary Breakfast</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-primary" />
+                  <span className="text-foreground">Late Check-out Available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Features Section */}
       <section className="py-16 px-4">
