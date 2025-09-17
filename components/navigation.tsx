@@ -60,6 +60,25 @@ export function Navigation({ overlay = false }: NavigationProps) {
                 {item.name}
               </Link>
             ))}
+            {/* Our Service dropdown */}
+            <div className="relative group">
+              <button
+                className={`${
+                  overlay
+                    ? "text-white hover:text-primary-light transition-colors duration-200 font-medium"
+                    : "text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                }`}
+              >
+                Our Service
+              </button>
+              <div className="absolute left-0 mt-2 w-56 rounded-md border border-border bg-card shadow-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity">
+                <div className="py-2">
+                  <Link href="/services/shuttle" className="block px-4 py-2 hover:bg-muted text-foreground">Shuttle Service</Link>
+                  <Link href="/services/gym" className="block px-4 py-2 hover:bg-muted text-foreground">Gym</Link>
+                  <Link href="/services/islamic" className="block px-4 py-2 hover:bg-muted text-foreground">Islamic</Link>
+                </div>
+              </div>
+            </div>
             <Link href="/room">
               <Button className="bg-primary hover:bg-secondary text-primary-foreground">Book Now</Button>
             </Link>
@@ -98,6 +117,29 @@ export function Navigation({ overlay = false }: NavigationProps) {
                   {item.name}
                 </Link>
               ))}
+              {/* Our Service (mobile) */}
+              <div className="px-3 pt-2 pb-1 text-xs uppercase tracking-wide ${overlay ? 'text-white/70' : 'text-muted-foreground'}">Our Service</div>
+              <Link
+                href="/services/shuttle"
+                className={`block px-3 py-2 transition-colors duration-200 ${overlay ? "text-white hover:text-primary-light" : "text-foreground hover:text-primary"}`}
+                onClick={() => setIsOpen(false)}
+              >
+                Shuttle Service
+              </Link>
+              <Link
+                href="/services/gym"
+                className={`block px-3 py-2 transition-colors duration-200 ${overlay ? "text-white hover:text-primary-light" : "text-foreground hover:text-primary"}`}
+                onClick={() => setIsOpen(false)}
+              >
+                Gym
+              </Link>
+              <Link
+                href="/services/islamic"
+                className={`block px-3 py-2 transition-colors duration-200 ${overlay ? "text-white hover:text-primary-light" : "text-foreground hover:text-primary"}`}
+                onClick={() => setIsOpen(false)}
+              >
+                Islamic
+              </Link>
               <div className="px-3 py-2">
                 <Link href="/room" onClick={() => setIsOpen(false)}>
                   <Button className="w-full bg-primary hover:bg-secondary text-primary-foreground">Book Now</Button>

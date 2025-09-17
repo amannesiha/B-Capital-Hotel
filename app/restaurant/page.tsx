@@ -133,6 +133,8 @@ export default function RestaurantPage() {
                 alt="Chocolate Cake"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
+                priority={true}
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <h3 className="text-white text-lg font-semibold">Chocolate Cake</h3>
@@ -146,6 +148,7 @@ export default function RestaurantPage() {
                 alt="Chocolate Donut"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <h3 className="text-white text-lg font-semibold">Chocolate Donut</h3>
@@ -159,6 +162,7 @@ export default function RestaurantPage() {
                 alt="Eclair"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <h3 className="text-white text-lg font-semibold">Eclair</h3>
@@ -172,6 +176,7 @@ export default function RestaurantPage() {
                 alt="Chocolate Tart"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <h3 className="text-white text-lg font-semibold">Chocolate Tart</h3>
@@ -185,6 +190,7 @@ export default function RestaurantPage() {
                 alt="Birthday Cake"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <h3 className="text-white text-lg font-semibold">Birthday Cake</h3>
@@ -198,6 +204,7 @@ export default function RestaurantPage() {
                 alt="Chocolate Log Cake"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <h3 className="text-white text-lg font-semibold">Chocolate Log</h3>
@@ -207,10 +214,11 @@ export default function RestaurantPage() {
             {/* Swiss Roll */}
             <div className="relative h-64 rounded-lg overflow-hidden group">
               <Image
-               src="/images/torta-1.jpg"
+                src="/images/torta-1.jpg"
                 alt="Swiss Roll"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <h3 className="text-white text-lg font-semibold">Swiss Roll</h3>
@@ -220,10 +228,11 @@ export default function RestaurantPage() {
             {/* Brownie Tray */}
             <div className="relative h-64 rounded-lg overflow-hidden group">
               <Image
-                 src="/images/torta-2.jpg"
+                src="/images/torta-2.jpg"
                 alt="Brownie Tray"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <h3 className="text-white text-lg font-semibold">Brownie Tray</h3>
